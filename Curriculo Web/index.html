@@ -3,6 +3,9 @@
   <head>
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="style.css" />
+    <title>Deyvson CurriculoWEB</title>
+    
+      
   </head>
   <body>
     <div class="macbook-air">
@@ -12,7 +15,7 @@
             <img class="element" src="img/3-1.png" />
             <div class="rectangle"></div>
             <div class="div"></div>
-            <img class="IMG" src="./img/img-20221008-222826-1-2.png" />
+            <img class="IMG" src="img/img-20221008-222826-1.png" />
             <img class="intersect" src="img/intersect.svg" />
             <p class="sou-um-profissional">
               Sou um profissional dedicado e proativo, com um forte espírito de liderança. Destaco-me por meu esforço
@@ -26,35 +29,83 @@
           <div class="text-wrapper-2">Data Science</div>
         </div>
         <div class="icones">
-          <img class="icon-home" src="./img/icon-home-2.png" />
-          <img class="icon-envelope-closed" src="img/icon-envelope-closed-2.png" />
-          <img class="icon-phone" src="img/icon-phone-2.png" />
-          <img class="icon-briefcase" src="img/icon-briefcase-2.png" />
+          <img class="icon-home" src="img/icon-home-1.png" />
+          <img class="icon-envelope-closed" src="img/icon-envelope-closed-1.png" />
+          <img class="icon-phone" src="img/icon-phone-1.png" />
+          <img class="icon-briefcase" src="img/icon-briefcase-1.png" />
           <div class="text-wrapper-3">(81)98437-1475</div>
-          <div class="text-wrapper-4">linkedin/deyvson-de-albuquerque-melo-535571197/</div>
+          <a href="http:linkedin/deyvson-de-albuquerque-melo-535571197/"><div class="text-wrapper-4">linkedin/deyvson-de-albuquerque-melo-535571197/</div></a>
           <div class="text-wrapper-5">deyvsonxts@gmail.com</div>
           <p class="p">Rua Lírio Do Vale, 165, Recife-PE</p>
         </div>
-        <div class="main">
+        <a href="sobremim.html"><div class="main">
           <div class="overlap-2">
             <div class="text-wrapper-6">Sobre mim</div>
-            <img class="line" src="./img/line-1.svg" />
-          </div>
-          <div class="overlap-3">
-            <div class="text-wrapper-7">Experiência</div>
-            <img class="img" src="img/line-2-2.svg" />
+            <img class="line" src="img/line-1.svg" />
+          </div></a>
+          <div  class="overlap-3">
+            <div id="botaoRolar" class="text-wrapper-7">Experiência</div>
+            <img class="img" src="img/line-2.svg" />
           </div>
           <div class="overlap-4">
             <div class="text-wrapper-7">Formação</div>
-            <img class="line-2" src="img/line-3-2.svg" />
+            <img class="line-2" src="img/line-3.svg" />
           </div>
           <div class="overlap-5">
             <div class="text-wrapper-8">Habilidades</div>
-            <img class="line-3" src="img/line-4-2.svg" />
+            <img class="line-3" src="img/line-4.svg" />
           </div>
           <div class="text-wrapper-9">DEYVSON DE ALBUQUERQUE</div>
         </div>
       </div>
+      <p class="experi-ncia-em">
+        Experiência em comandar sobre perssão<br />uma equipe<br />de nove pessoas sempre inexperientes
+      </p>
+      <div class="overlap-6">
+        <p class="text-wrapper-10">Faculdade no SENAC de ADS</p>
+        <div class="text-wrapper-11">HABILIDADES</div>
+      </div>
+      <div class="text-wrapper-12">Fundação Bradesco</div>
+      <div id="experiencias" class="text-wrapper-13">EXPERIÊNCIAS PROFISSIONAIS</div>
+      <div class="text-wrapper-14">FORMAÇÃO</div>
+      <div class="ellipse"></div>
+      <div class="text-wrapper-15">CABO DO EXÉRCITO BRASILEIRO</div>
+      <p class="text-wrapper-16">ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</p>
+      
+      <img class="ellipse-3" src="img/ellipse-5.svg" />
+      <div class="text-wrapper-17">VONTADE DE APRENDER</div>
+      <img class="ellipse-4" src="img/ellipse-6.svg" />
+      <div class="text-wrapper-18">CONFIANÇA</div>
+      <img class="ellipse-5" src="img/ellipse-7.svg" />
+      <div class="text-wrapper-19">LIDERANÇA</div>
+      <img class="ellipse-6" src="img/ellipse-8.svg" />
+      <div class="text-wrapper-20">CARISMA</div>
+      <img class="ellipse-7" src="img/ellipse-9.svg" />
+      <div class="text-wrapper-21">COMPROMETIMENTO</div>
+      <img class="ellipse-8" src="img/ellipse-4.svg" />
+      <p class="text-wrapper-22">INTRODUÇÃO A PROGRAMAÇÃO ORIENTADA A OBJETOS</p>
+      <div class="ellipse-9"></div>
+      <div class="text-wrapper-23">DESIGN FREELANCER</div>
+      <p class="fazer-artes-para">Fazer artes para redes sociais<br />de time de basket, igreja e lojas.</p>
+      <div class="ellipse-10"></div>
+      <div class="ellipse-11"></div>
+      <div class="ellipse-12"></div>
+
+      <script>
+        function scrollToElement(elementId) {
+          const element = document.getElementById(elementId);
+        
+          if (element) {
+            const yOffset = element.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({ top: yOffset, behavior: 'smooth' });
+          }
+        }
+        
+        const botaoRolar = document.getElementById("botaoRolar");
+        botaoRolar.addEventListener("click", function() {
+          scrollToElement("experiencias");
+        });
+        </script>
     </div>
   </body>
 </html>
